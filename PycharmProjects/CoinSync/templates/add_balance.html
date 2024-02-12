@@ -1,0 +1,68 @@
+{% extends 'user-dashboard-base.html' %}
+{% load humanize %}
+{% load static %}
+{% block title %}- Add Balance{% endblock %}
+{% block form %}
+    <div class="container">
+                                <div class="col-md-6 ">
+                                    <div class="card buy">
+                                        <div class="card-body">
+                                            <form method="post" action="{% url 'coinsync:balance' %}" class="container">
+                                                {% csrf_token %}
+                                                {{ form.non_field_errors }}
+                                                <div class="form-group m-2 mb-4">
+                                                    <div class="row">
+                                                         <div class="col-md-6">
+                                                            <label for="{{ form.payment_method.id_for_label }}">Payment Method:</label>
+                                                            {{ form.payment_method }}
+                                                            {{ form.payment_method.errors }}
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="{{ form.amount.id_for_label }}">Amount:</label>
+                                                            {{ form.amount }}
+                                                            {{ form.amount.errors }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group m-2 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label for="{{ form.cardholder_name.id_for_label }}">Name:</label>
+                                                            {{ form.cardholder_name }}
+                                                            {{ form.cardholder_name.errors }}
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <label for="{{ form.card_number.id_for_label }}" >Card Number:</label>
+                                                            {{ form.card_number }}
+                                                            {{ form.card_number.errors }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group m-2 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label for="{{ form.expiration_date.id_for_label }}">Expiry:</label>
+                                                            {{ form.expiration_date }}
+                                                            {{ form.expiration_date.errors }}
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="{{ form.cvv.id_for_label }}">CVV:</label>
+                                                            {{ form.cvv }}
+                                                            {{ form.cvv.errors }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <button type="submit" class="m-2 btn btn-dark">Add Balance</button>
+
+                                                {% if message %}
+                                                    <p class="text-danger fw-bolder mt-2">{{ message }}</p>
+                                                {% endif %}
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+{% endblock %}

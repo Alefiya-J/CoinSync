@@ -1,0 +1,68 @@
+[
+    {
+      "name": "NFT",
+      "image": "https://www.pngall.com/wp-content/uploads/13/NFT-Logo.png",
+      "market_cap": 17479544816.22,
+      "market_cap_change_24h": 3.13,
+      "content": "Non-fungible tokens, or NFTs, are collectible elements within the Ethereum blockchain that usually follow the ERC-721 or ERC-1155 standard. They represent something unique and therefore are not mutually interchangeable. In other words, no non-fungible token is the same. NFTs take advantage of innovative smart contract technology to store and record unique information on the blockchain, which means that whenever an NFT is created, only one of it verifiably exists. NFT creators can also encrypt details such as rich metadata or secure file links allowing people to create all sorts of digital assets which are verifiable such as videos and songs. With NFTs, one can digitally certify that an asset is authentic.",
+      "coin1": "https://assets.coingecko.com/coins/images/14495/small/Internet_Computer_logo.png?1696514180",
+      "coin2": "https://assets.coingecko.com/coins/images/17233/small/immutableX-symbol-BLK-RGB.png?1696516787",
+      "coin3": "https://assets.coingecko.com/coins/images/11636/small/rndr.png?1696511529",
+      "volume_24h": 4044858429.96
+    },
+    {
+      "name": "Decentralized Finance (DeFi)",
+      "image": "https://static.vecteezy.com/system/resources/previews/023/251/414/non_2x/decentralized-finance-icons-free-png.png",
+      "market_cap": 62595828900.80,
+      "market_cap_change_24h": 1.62,
+      "content": "",
+      "coin1":"https://assets.coingecko.com/coins/images/13442/small/steth_logo.png?1696513206",
+      "coin2": "https://assets.coingecko.com/coins/images/877/small/chainlink-new-logo.png?1696502009",
+      "coin3":"https://assets.coingecko.com/coins/images/9956/small/Badge_Dai.png?1696509996",
+      "volume_24h": 46001751271.67
+    },
+    {
+        "name": "Metaverse",
+        "image" : "https://static.vecteezy.com/system/resources/previews/024/512/572/original/a-woman-head-use-vr-virtual-reality-goggle-and-metaverse-icons-with-line-polygon-background-education-for-metaverse-concept-png.png",
+        "market_cap": 8700157718.39,
+        "market_cap_change_24h": -0.67,
+        "content": "The metaverse refers to a digital world where participants can interact with each other in a shared virtual reality.",
+        "coin1":"https://assets.coingecko.com/coins/images/14495/small/Internet_Computer_logo.png?1696514180",
+        "coin2":"https://assets.coingecko.com/coins/images/11636/small/rndr.png?1696511529",
+        "coin3":"https://assets.coingecko.com/coins/images/12129/small/sandbox_logo.jpg?1696511971",
+        "volume_24h": 843012855.60
+    },
+    {
+        "name": "Layer 1 (L1)",
+        "image": "https://cdn-icons-png.flaticon.com/512/167/167487.png",
+        "market_cap": 1074872716560.60,
+        "market_cap_change_24h": 1.42,
+        "content": "",
+        "coin1":"https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1696501400",
+        "coin2":"https://assets.coingecko.com/coins/images/279/small/ethereum.png?1696501628",
+        "coin3":"https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png?1696501970",
+        "volume_24h": 61290646188.25
+    },
+    {
+      "name": "Smart Contracts",
+      "image": "https://icons.veryicon.com/png/o/business/work-circle/smart-contracts.png",
+      "market_cap": 393658487982.68,
+      "market_cap_change_24h": 0.92,
+      "content": "Smart contract platforms are usually blockchains that host smart contracts or decentralized applications. Users can interact with different smart contracts on these platforms to perform various actions such as lending and borrowing funds, staking their assets or minting NFTs.\r\n\r\nSmart contracts are programs that are stored on the blockchain and are automatically executed when certain conditions are met. To interact with these smart contracts, transaction fees may need to be paid and the amount and asset required will vary based on the platform’s architecture. Usually, the smart contract platform’s native token is used to pay for transaction fees. Some popular examples of smart contract platforms include Ethereum, Solana and Polygon.",
+      "coin1":"https://assets.coingecko.com/coins/images/279/small/ethereum.png?1696501628",
+      "coin2":"https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png?1696501970",
+      "coin3":"https://assets.coingecko.com/coins/images/4128/small/solana.png?1696504756",
+      "volume_24h": 37287070246.53
+    },
+    {
+        "name": "Memes",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIhwd_iK6hxQkxKjQUT27TrZ3dfRI6COoUxl6o5oZ2IRllht0df94eBkN-9YlKwIgsuEw&usqp=CAU",
+        "market_cap": 18566400931.73,
+        "market_cap_change_24h": 6.70,
+        "content": "Meme coins derive their relevance from memes, thriving on hype and picking up momentum as the community grows.",
+        "coin1":"https://assets.coingecko.com/coins/images/5/small/dogecoin.png?1696501409",
+        "coin2":"https://assets.coingecko.com/coins/images/11939/small/shiba.png?1696511800",
+        "coin3":"https://assets.coingecko.com/coins/images/29850/small/pepe-token.jpeg?1696528776",
+        "volume_24h": 2717573462.54
+    }
+  ]

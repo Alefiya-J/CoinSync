@@ -1,0 +1,58 @@
+{% extends 'user-dashboard-base.html' %}
+{% load humanize %}
+{% load static %}
+{% block title %}- User Profile{% endblock %}
+{%  block form %}
+<ul class="nav nav-underline border-bottom" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link text-dark fw-bolder" id="home-tab" data-toggle="tab" href="#assets" role="tab" aria-controls="home" aria-selected="true">My Assets</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark fw-bolder" id="profile-tab" data-toggle="tab" href="#distribution" role="tab" aria-controls="profile" aria-selected="false">Assets Distribution</a>
+    </li>
+</ul>
+{% endblock %}
+{% block details %}
+<div class="row">
+                    <div class="col-md-3">
+                        <div class="profile-work">
+
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="assets" role="tabpanel" aria-labelledby="assets-tab">
+                                {%  if cryptos  %}
+                                <table class="table table-striped align-middle">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">#</th>
+                                          <th scope="col">CryptoCurrency</th>
+                                          <th scope="col">Quantity</th>
+                                          <th scope="col">Amount Bought</th>
+                                          <th scope="col">Date</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        {% for i in cryptos %}
+                                          <tr>
+                                            <th scope="row">{{ forloop.counter }}</th>
+                                            <td><img src="{{i.cryptocurrency.image}}" width="35" class = "mx-1"> {{i.cryptocurrency.name}}</td>
+                                            <td>{{ i.quantity }} {{ i.cryptocurrency.symbol }}</td>
+                                            <td>{{ i.amount_bought | floatformat:2}}</td>
+                                            <td>{{ i.date_bought }}</td>
+                                          </tr>
+                                        {% endfor %}
+                                      </tbody>
+                                    </table>
+                                    {% else %}
+                                    <p>You dont have any assets yet</p><a href="{% url 'coinsync:buy' %}"><button class="btn btn-dark" name="btnAddMore" >Start Buying</button></a>
+                            {% endif %}
+                            </div>
+                            <div class="tab-pane fade " id="distribution" role="tabpanel" aria-labelledby="dist-tab">
+                                {{ chart|safe }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

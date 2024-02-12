@@ -1,0 +1,62 @@
+[
+    {
+      "name": "United States Dollar",
+      "code": "USD",
+      "symbol": "$"
+    },
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    },
+    {
+      "name": "Japanese Yen",
+      "code": "JPY",
+      "symbol": "¥"
+    },
+    {
+      "name": "British Pound Sterling",
+      "code": "GBP",
+      "symbol": "£"
+    },
+    {
+      "name": "Australian Dollar",
+      "code": "AUD",
+      "symbol": "A$"
+    },
+    {
+      "name": "Canadian Dollar",
+      "code": "CAD",
+      "symbol": "CA$"
+    },
+    {
+      "name": "Swiss Franc",
+      "code": "CHF",
+      "symbol": "CHF"
+    },
+    {
+      "name": "Chinese Yuan",
+      "code": "CNY",
+      "symbol": "¥"
+    },
+    {
+      "name": "New Zealand Dollar",
+      "code": "NZD",
+      "symbol": "NZ$"
+    },
+    {
+      "name": "Singapore Dollar",
+      "code": "SGD",
+      "symbol": "S$"
+    },
+    {
+      "name": "Indian Rupee",
+      "code": "INR",
+      "symbol": "₹"
+    },
+    {
+      "name": "Hong Kong Dollar",
+      "code": "HKD",
+      "symbol": "HK$"
+    }
+  ]

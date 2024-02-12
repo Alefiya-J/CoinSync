@@ -1,0 +1,39 @@
+{% extends 'user-dashboard-base.html' %}
+{% load humanize %}
+{% load static %}
+{% block title %}- Payment History{% endblock %}
+{% block details %}
+    <div class="container mt-4">
+        <div class="col-md-12 ">
+            <h3>Payment History</h3>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Transaction Type</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Cryptocurrency</th>
+                  <th scope="col">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for payment in payment_history %}
+                  <tr>
+                    <th scope="row">{{ forloop.counter }}</th>
+                    <td>{{ payment.transaction_type }}</td>
+                    <td>
+                     {% if payment.transaction_type == "Cryptocurrency Purchase" %}
+                          <span class="ms-1 " style="color: red;">- {{ payment.amount }} USD</span>
+                    {% else%}
+                        <span class="ms-1" style="color: green;">+{{ payment.amount }} USD</span>
+                      {% endif %}
+                    </td>
+                    <td>{{ payment.cryptocurrency.name }}</td>
+                    <td>{{ payment.transaction_date }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+{% endblock %}

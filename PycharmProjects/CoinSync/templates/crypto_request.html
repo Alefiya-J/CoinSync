@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load static %}
+{% block title %}Get listed{% endblock %}
+{% block body_block %}
+
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+            <div class="container"><a class="navbar-brand" href="{% url 'coinsync:landing' %}">
+                <strong class="h5 mb-0 fw-bolder text-uppercase text-monospace">€oin$ync</strong></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item fw-bolder"><a class="nav-link" href="{% url 'coinsync:index' %}">Cryptocurrency </a></li>
+                        <li class="nav-item dropdown fw-bolder">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Conversions
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'coinsync:conversions' type='Crypto' %}">Crypto</a></li>
+                            <li><a class="dropdown-item" href="{% url 'coinsync:conversions' type='Currency' %}">Currencies</a></li>
+                          </ul>
+                        </li>
+                        {% if is_user_authenticated %}
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:dashboard' %}">My Portfolio</a></li>
+                        {% else %}
+                            <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:landing' %}">My Portfolio</a></li>
+                        {% endif %}
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:contact' %}">Contact Us </a></li>
+                    </ul>
+                </div>
+                {% if is_user_authenticated %}
+                <a class="link-dark link-offset-3 link-underline-opacity-25 link-underline-opacity-100-hover fw-bolder" href="{% url 'coinsync:crypto_request' %}">Get listed </a>
+                {% endif %}
+                <div class="position-relative shadow-sm bg-white rounded mx-3">
+                    <span class="position-absolute search"><i class="fa fa-search"></i></span>
+                    <input id="myInput" class="form-control " placeholder="Search">
+                </div>
+                {% if not is_user_authenticated %}
+                <a href="{% url 'coinsync:login' %}"> <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Login/Signup</button></a>
+                {% else %}
+                    <a href="{% url 'coinsync:logout' %}"> <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Logout</button></a>
+                {% endif %}
+
+            </div>
+        </nav>
+    </header>
+  <div class="container mt-5">
+    <div class="card shadow-lg p-4">
+      <h2 class="card-title text-center my-4">Crypto Request Form</h2>
+      <form method="post" class="needs-validation p-3" novalidate>
+
+        {% csrf_token %}
+
+        <div class="form-group m-1 mb-4 ">
+          <label for="id_name">Name</label>
+          <input type="text" class="form-control border" id="id_name" name="name" required>
+        </div>
+
+        <div class="form-group m-1 mb-4 ">
+          <label for="id_symbol">Symbol</label>
+          <input type="text" class="form-control border" id="id_symbol" name="symbol" required>
+        </div>
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_description">Description</label>
+          <textarea class="form-control border" id="id_description" name="description" rows="3" required></textarea>
+          <small class="form-text text-muted">Provide a description of the cryptocurrency.</small>
+        </div>
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_price">Price</label>
+          <input type="number" class="form-control border" id="id_price" name="price" required>
+          <small class="form-text text-muted">Enter the price of the cryptocurrency.</small>
+        </div>
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_circulating_supply">Circulating Supply</label>
+          <input type="number" class="form-control border" id="id_circulating_supply" name="circulating_supply" required>
+          <small class="form-text text-muted">Enter the circulating supply of the cryptocurrency.</small>
+        </div>
+
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_total_supply">Total Supply</label>
+          <input type="number" class="form-control border" id="id_total_supply" name="total_supply" required>
+          <small class="form-text text-muted">Enter the total supply of the cryptocurrency.</small>
+        </div>
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_market_cap">Market Cap</label>
+          <input type="number" class="form-control border" id="id_market_cap" name="market_cap" required>
+          <small class="form-text text-muted">Enter the market cap of the cryptocurrency.</small>
+        </div>
+
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_release_date">Release Date</label>
+          <input type="date" class="form-control border" id="id_release_date" name="release_date" required>
+          <small class="form-text text-muted">Select the release date of the cryptocurrency.</small>
+        </div>
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_website">Website</label>
+          <input type="url" class="form-control border" id="id_website" name="website">
+          <small class="form-text text-muted">Enter the website of the cryptocurrency.</small>
+        </div>
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_whitepaper">Whitepaper</label>
+          <input type="url" class="form-control border" id="id_whitepaper" name="whitepaper">
+          <small class="form-text text-muted">Enter the URL to the whitepaper of the cryptocurrency.</small>
+        </div>
+
+        <div class="form-group m-1 mb-4">
+          <label for="id_additional_info">Additional Info</label>
+          <textarea class="form-control border" id="id_additional_info" name="additional_info" rows="3"></textarea>
+          <small class="form-text text-muted">Enter any additional information about the cryptocurrency.</small>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mt-3">Submit Request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

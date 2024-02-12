@@ -1,0 +1,1862 @@
+[
+    {
+      "from": "Bitcoin",
+      "to": "USD",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "USD",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "USD",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "USD",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "USD",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "USD",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "USD",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "USD",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "USD",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "USD",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "USD",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "USD",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "USD",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "USD",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "USD",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "USD",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "USD",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "USD",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "USD",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "USD",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "EUR",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "EUR",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "EUR",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "EUR",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "EUR",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "EUR",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "EUR",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "EUR",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "EUR",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "EUR",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "EUR",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "EUR",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "EUR",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "EUR",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "EUR",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "EUR",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "EUR",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "EUR",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "EUR",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "EUR",
+      "rate": 8.44e-06
+    },
+	{
+      "from": "Bitcoin",
+      "to": "JPY",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "JPY",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "JPY",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "JPY",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "JPY",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "JPY",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "JPY",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "JPY",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "JPY",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "JPY",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "JPY",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "JPY",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "JPY",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "JPY",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "JPY",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "JPY",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "JPY",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "JPY",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "JPY",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "JPY",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "GBP",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "GBP",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "GBP",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "GBP",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "GBP",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "GBP",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "GBP",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "GBP",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "GBP",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "GBP",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "GBP",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "GBP",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "GBP",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "GBP",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "GBP",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "GBP",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "GBP",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "GBP",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "GBP",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "GBP",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "AUD",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "AUD",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "AUD",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "AUD",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "AUD",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "AUD",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "AUD",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "AUD",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "AUD",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "AUD",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "AUD",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "AUD",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "AUD",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "AUD",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "AUD",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "AUD",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "AUD",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "AUD",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "AUD",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "AUD",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "CAD",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "CAD",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "CAD",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "CAD",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "CAD",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "CAD",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "CAD",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "CAD",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "CAD",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "CAD",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "CAD",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "CAD",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "CAD",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "CAD",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "CAD",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "CAD",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "CAD",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "CAD",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "CAD",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "CAD",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "CHF",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "CHF",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "CHF",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "CHF",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "CHF",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "CHF",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "CHF",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "CHF",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "CHF",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "CHF",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "CHF",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "CHF",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "CHF",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "CHF",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "CHF",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "CHF",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "CHF",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "CHF",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "CHF",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "CHF",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "CNY",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "CNY",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "CNY",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "CNY",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "CNY",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "CNY",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "CNY",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "CNY",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "CNY",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "CNY",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "CNY",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "CNY",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "CNY",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "CNY",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "CNY",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "CNY",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "CNY",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "CNY",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "CNY",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "CNY",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "NZD",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "NZD",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "NZD",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "NZD",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "NZD",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "NZD",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "NZD",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "NZD",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "NZD",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "NZD",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "NZD",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "NZD",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "NZD",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "NZD",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "NZD",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "NZD",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "NZD",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "NZD",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "NZD",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "NZD",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "SGD",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "SGD",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "SGD",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "SGD",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "SGD",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "SGD",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "SGD",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "SGD",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "SGD",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "SGD",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "SGD",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "SGD",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "SGD",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "SGD",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "SGD",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "SGD",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "SGD",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "SGD",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "SGD",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "SGD",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "INR",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "INR",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "INR",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "INR",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "INR",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "INR",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "INR",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "INR",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "INR",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "INR",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "INR",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "INR",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "INR",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "INR",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "INR",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "INR",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "INR",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "INR",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "INR",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "INR",
+      "rate": 8.44e-06
+    },
+    {
+      "from": "Bitcoin",
+      "to": "HKD",
+      "rate": 36483
+    },
+    {
+      "from": "Ethereum",
+      "to": "HKD",
+      "rate": 1949.29
+    },
+    {
+      "from": "Tether",
+      "to": "HKD",
+      "rate": 1.001
+    },
+    {
+      "from": "BNB",
+      "to": "HKD",
+      "rate": 243.45
+    },
+    {
+      "from": "XRP",
+      "to": "HKD",
+      "rate": 0.60542
+    },
+    {
+      "from": "Solana",
+      "to": "HKD",
+      "rate": 57.74
+    },
+    {
+      "from": "USDC",
+      "to": "HKD",
+      "rate": 1
+    },
+    {
+      "from": "Lido Staked Ether",
+      "to": "HKD",
+      "rate": 1946.44
+    },
+    {
+      "from": "Cardano",
+      "to": "HKD",
+      "rate": 0.373807
+    },
+    {
+      "from": "Dogecoin",
+      "to": "HKD",
+      "rate": 0.078295
+    },
+    {
+      "from": "TRON",
+      "to": "HKD",
+      "rate": 0.102046
+    },
+    {
+      "from": "Polygon",
+      "to": "HKD",
+      "rate": 0.82433
+    },
+    {
+      "from": "Chainlink",
+      "to": "HKD",
+      "rate": 13.68
+    },
+    {
+      "from": "Avalanche",
+      "to": "HKD",
+      "rate": 21.17
+    },
+    {
+      "from": "Polkadot",
+      "to": "HKD",
+      "rate": 5.26
+    },
+    {
+      "from": "Wrapped Bitcoin",
+      "to": "HKD",
+      "rate": 36430
+    },
+    {
+      "from": "Dai",
+      "to": "HKD",
+      "rate": 0.999519
+    },
+    {
+      "from": "Litecoin",
+      "to": "HKD",
+      "rate": 69.22
+    },
+    {
+      "from": "Toncoin",
+      "to": "HKD",
+      "rate": 2.38
+    },
+    {
+      "from": "Shiba Inu",
+      "to": "HKD",
+      "rate": 8.44e-06
+    },
+    {
+        "from": "USD",
+        "to": "EUR",
+        "rate": "0.91"
+    },
+    {
+        "from": "USD",
+        "to": "JPY",
+        "rate": "149.54"
+    },
+    {
+        "from": "USD",
+        "to": "GBP",
+        "rate": "0.74"
+    },
+    {
+        "from": "USD",
+        "to": "AUD",
+        "rate": "1.31"
+    },
+    {
+        "from": "USD",
+        "to": "CAD",
+        "rate": "1.27"
+    },
+    {
+        "from": "USD",
+        "to": "CHF",
+        "rate": "0.92"
+    },
+    {
+        "from": "USD",
+        "to": "CNY",
+        "rate": "6.43"
+    },
+    {
+        "from": "USD",
+        "to": "NZD",
+        "rate": "1.40"
+    },
+    {
+        "from": "USD",
+        "to": "SGD",
+        "rate": "1.35"
+    },
+    {
+        "from": "USD",
+        "to": "INR",
+        "rate": "75.01"
+    },
+    {
+        "from": "USD",
+        "to": "HKD",
+        "rate": "7.77"
+    },
+    {
+        "from": "EUR",
+        "to": "USD",
+        "rate": "1.10"
+    },
+    {
+        "from": "EUR",
+        "to": "JPY",
+        "rate": "164.37"
+    },
+    {
+        "from": "EUR",
+        "to": "GBP",
+        "rate": "0.82"
+    },
+    {
+        "from": "EUR",
+        "to": "AUD",
+        "rate": "1.44"
+    },
+    {
+        "from": "EUR",
+        "to": "CAD",
+        "rate": "1.40"
+    },
+    {
+        "from": "EUR",
+        "to": "CHF",
+        "rate": "1.07"
+    },
+    {
+        "from": "EUR",
+        "to": "CNY",
+        "rate": "7.43"
+    },
+    {
+        "from": "EUR",
+        "to": "NZD",
+        "rate": "1.62"
+    },
+    {
+        "from": "EUR",
+        "to": "SGD",
+        "rate": "1.55"
+    },
+    {
+        "from": "EUR",
+        "to": "INR",
+        "rate": "86.96"
+    },
+    {
+        "from": "EUR",
+        "to": "HKD",
+        "rate": "8.98"
+    },
+    {
+        "from": "JPY",
+        "to": "USD",
+        "rate": "0.0067"
+    },
+    {
+        "from": "JPY",
+        "to": "EUR",
+        "rate": "0.0061"
+    },
+    {
+        "from": "JPY",
+        "to": "GBP",
+        "rate": "0.0050"
+    },
+    {
+        "from": "JPY",
+        "to": "AUD",
+        "rate": "0.0088"
+    },
+    {
+        "from": "JPY",
+        "to": "CAD",
+        "rate": "0.0085"
+    },
+    {
+        "from": "JPY",
+        "to": "CHF",
+        "rate": "0.0065"
+    },
+    {
+        "from": "JPY",
+        "to": "CNY",
+        "rate": "0.045"
+    },
+    {
+        "from": "JPY",
+        "to": "NZD",
+        "rate": "0.0095"
+    },
+    {
+        "from": "JPY",
+        "to": "SGD",
+        "rate": "0.0091"
+    },
+    {
+        "from": "JPY",
+        "to": "INR",
+        "rate": "0.50"
+    },
+    {
+        "from": "JPY",
+        "to": "HKD",
+        "rate": "0.065"
+    },
+    {
+        "from": "GBP",
+        "to": "USD",
+        "rate": "1.35"
+    },
+    {
+        "from": "GBP",
+        "to": "EUR",
+        "rate": "1.21"
+    },
+    {
+        "from": "GBP",
+        "to": "JPY",
+        "rate": "150.08"
+    },
+    {
+        "from": "GBP",
+        "to": "AUD",
+        "rate": "2.10"
+    },
+    {
+        "from": "GBP",
+        "to": "CAD",
+        "rate": "2.03"
+    },
+    {
+        "from": "GBP",
+        "to": "CHF",
+        "rate": "1.56"
+    },
+    {
+        "from": "GBP",
+        "to": "CNY",
+        "rate": "10.88"
+    },
+    {
+        "from": "GBP",
+        "to": "NZD",
+        "rate": "2.34"
+    },
+    {
+        "from": "GBP",
+        "to": "SGD",
+        "rate": "2.25"
+    },
+    {
+        "from": "GBP",
+        "to": "INR",
+        "rate": "98.99"
+    },
+    {
+        "from": "GBP",
+        "to": "HKD",
+        "rate": "10.21"
+    },
+    {
+        "from": "AUD",
+        "to": "USD",
+        "rate": "0.76"
+    },
+    {
+        "from": "AUD",
+        "to": "EUR",
+        "rate": "0.67"
+    },
+    {
+        "from": "AUD",
+        "to": "JPY",
+        "rate": "82.15"
+    },
+    {
+        "from": "AUD",
+        "to": "GBP",
+        "rate": "0.55"
+    },
+    {
+        "from": "AUD",
+        "to": "CAD",
+        "rate": "0.71"
+    },
+    {
+        "from": "AUD",
+        "to": "CHF",
+        "rate": "0.76"
+    },
+    {
+        "from": "AUD",
+        "to": "CNY",
+        "rate": "4.84"
+    },
+    {
+        "from": "AUD",
+        "to": "NZD",
+        "rate": "1.08"
+    },
+    {
+        "from": "AUD",
+        "to": "SGD",
+        "rate": "1.03"
+    },
+    {
+        "from": "AUD",
+        "to": "INR",
+        "rate": "55.10"
+    },
+    {
+        "from": "AUD",
+        "to": "HKD",
+        "rate": "5.70"
+    },
+    {
+        "from": "CAD",
+        "to": "USD",
+        "rate": "0.79"
+    },
+    {
+        "from": "CAD",
+        "to": "EUR",
+        "rate": "0.69"
+    },
+    {
+        "from": "CAD",
+        "to": "JPY",
+        "rate": "113.84"
+    },
+    {
+        "from": "CAD",
+        "to": "GBP",
+        "rate": "0.58"
+    },
+    {
+        "from": "CAD",
+        "to": "AUD",
+        "rate": "1.02"
+    },
+    {
+        "from": "CAD",
+        "to": "CHF",
+        "rate": "0.74"
+    },
+    {
+        "from": "CAD",
+        "to": "CNY",
+        "rate": "5.17"
+    },
+    {
+        "from": "CAD",
+        "to": "NZD",
+        "rate": "1.12"
+    },
+    {
+        "from": "CAD",
+        "to": "SGD",
+        "rate": "1.07"
+    },
+    {
+        "from": "CAD",
+        "to": "INR",
+        "rate": "58.86"
+    },
+    {
+        "from": "CAD",
+        "to": "HKD",
+        "rate": "6.08"
+    },
+    {
+        "from": "CHF",
+        "to": "USD",
+        "rate": "1.08"
+    },
+    {
+        "from": "CHF",
+        "to": "EUR",
+        "rate": "0.93"
+    },
+    {
+        "from": "CHF",
+        "to": "JPY",
+        "rate": "137.31"
+    },
+    {
+        "from": "CHF",
+        "to": "GBP",
+        "rate": "0.70"
+    },
+    {
+        "from": "CHF",
+        "to": "AUD",
+        "rate": "1.21"
+    },
+    {
+        "from": "CHF",
+        "to": "CAD",
+        "rate": "1.17"
+    },
+    {
+        "from": "CHF",
+        "to": "CNY",
+        "rate": "7.22"
+    },
+    {
+        "from": "CHF",
+        "to": "NZD",
+        "rate": "1.30"
+    },
+    {
+        "from": "CHF",
+        "to": "SGD",
+        "rate": "1.25"
+    },
+    {
+        "from": "CHF",
+        "to": "INR",
+        "rate": "70.25"
+    },
+    {
+        "from": "CHF",
+        "to": "HKD",
+        "rate": "8.93"
+    },
+    {
+        "from": "CNY",
+        "to": "USD",
+        "rate": "0.16"
+    },
+    {
+        "from": "CNY",
+        "to": "EUR",
+        "rate": "0.18"
+    },
+    {
+        "from": "CNY",
+        "to": "JPY",
+        "rate": "3.34"
+    },
+    {
+        "from": "CNY",
+        "to": "GBP",
+        "rate": "0.13"
+    },
+    {
+        "from": "CNY",
+        "to": "AUD",
+        "rate": "0.22"
+    },
+    {
+        "from": "CNY",
+        "to": "CAD",
+        "rate": "0.23"
+    },
+    {
+        "from": "CNY",
+        "to": "CHF",
+        "rate": "0.15"
+    },
+    {
+        "from": "CNY",
+        "to": "NZD",
+        "rate": "0.26"
+    },
+    {
+        "from": "CNY",
+        "to": "SGD",
+        "rate": "0.24"
+    },
+    {
+        "from": "CNY",
+        "to": "INR",
+        "rate": "11.20"
+    },
+    {
+        "from": "CNY",
+        "to": "HKD",
+        "rate": "1.45"
+    },
+    {
+        "from": "NZD",
+        "to": "USD",
+        "rate": "0.71"
+    },
+    {
+        "from": "NZD",
+        "to": "EUR",
+        "rate": "0.61"
+    },
+    {
+        "from": "NZD",
+        "to": "JPY",
+        "rate": "99.20"
+    },
+    {
+        "from": "NZD",
+        "to": "GBP",
+        "rate": "0.52"
+    },
+    {
+        "from": "NZD",
+        "to": "AUD",
+        "rate": "0.94"
+    },
+    {
+        "from": "NZD",
+        "to": "CAD",
+        "rate": "0.91"
+    },
+    {
+        "from": "NZD",
+        "to": "CHF",
+        "rate": "0.66"
+    },
+    {
+        "from": "NZD",
+        "to": "CNY",
+        "rate": "4.56"
+    },
+    {
+        "from": "NZD",
+        "to": "SGD",
+        "rate": "0.88"
+    },
+    {
+        "from": "NZD",
+        "to": "INR",
+        "rate": "50.55"
+    },
+    {
+        "from": "NZD",
+        "to": "HKD",
+        "rate": "6.18"
+    },
+    {
+        "from": "SGD",
+        "to": "USD",
+        "rate": "0.74"
+    },
+    {
+        "from": "SGD",
+        "to": "EUR",
+        "rate": "0.66"
+    },
+    {
+        "from": "SGD",
+        "to": "JPY",
+        "rate": "108.18"
+    },
+    {
+        "from": "SGD",
+        "to": "GBP",
+        "rate": "0.55"
+    },
+    {
+        "from": "SGD",
+        "to": "AUD",
+        "rate": "0.98"
+    },
+    {
+        "from": "SGD",
+        "to": "CAD",
+        "rate": "0.94"
+    },
+    {
+        "from": "SGD",
+        "to": "CHF",
+        "rate": "0.69"
+    },
+    {
+        "from": "SGD",
+        "to": "CNY",
+        "rate": "4.82"
+    },
+    {
+        "from": "SGD",
+        "to": "NZD",
+        "rate": "1.05"
+    },
+    {
+        "from": "SGD",
+        "to": "INR",
+        "rate": "55.71"
+    },
+    {
+        "from": "SGD",
+        "to": "HKD",
+        "rate": "5.75"
+    },
+    {
+        "from": "INR",
+        "to": "USD",
+        "rate": "0.013"
+    },
+    {
+        "from": "INR",
+        "to": "EUR",
+        "rate": "0.011"
+    },
+    {
+        "from": "INR",
+        "to": "JPY",
+        "rate": "1.50"
+    },
+    {
+        "from": "INR",
+        "to": "GBP",
+        "rate": "0.0093"
+    },
+    {
+        "from": "INR",
+        "to": "AUD",
+        "rate": "0.016"
+    },
+    {
+        "from": "INR",
+        "to": "CAD",
+        "rate": "0.015"
+    },
+    {
+        "from": "INR",
+        "to": "CHF",
+        "rate": "0.012"
+    },
+    {
+        "from": "INR",
+        "to": "CNY",
+        "rate": "0.085"
+    },
+    {
+        "from": "INR",
+        "to": "NZD",
+        "rate": "0.018"
+    },
+    {
+        "from": "INR",
+        "to": "SGD",
+        "rate": "0.017"
+    },
+    {
+        "from": "INR",
+        "to": "HKD",
+        "rate": "0.12"
+    },
+    {
+        "from": "HKD",
+        "to": "USD",
+        "rate": "0.13"
+    },
+    {
+        "from": "HKD",
+        "to": "EUR",
+        "rate": "0.11"
+    },
+    {
+        "from": "HKD",
+        "to": "JPY",
+        "rate": "17.16"
+    },
+    {
+        "from": "HKD",
+        "to": "GBP",
+        "rate": "0.10"
+    },
+    {
+        "from": "HKD",
+        "to": "AUD",
+        "rate": "0.18"
+    },
+    {
+        "from": "HKD",
+        "to": "CAD",
+        "rate": "0.18"
+    },
+    {
+        "from": "HKD",
+        "to": "CHF",
+        "rate": "0.14"
+    },
+    {
+        "from": "HKD",
+        "to": "CNY",
+        "rate": "1.00"
+    },
+    {
+        "from": "HKD",
+        "to": "NZD",
+        "rate": "0.21"
+    },
+    {
+        "from": "HKD",
+        "to": "SGD",
+        "rate": "0.20"
+    },
+    {
+        "from": "HKD",
+        "to": "INR",
+        "rate": "10.90"
+    }
+]

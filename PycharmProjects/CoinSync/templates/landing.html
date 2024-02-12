@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block body_block %}
+
+<header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+            <div class="container"><a class="navbar-brand" href="#">
+                <strong class="h5 mb-0 fw-bolder text-uppercase text-monospace">€oin$ync</strong></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:index' %}">Cryptocurrency</a></li>
+                        <li class="nav-item dropdown fw-bolder">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Conversions
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'coinsync:conversions' type='Crypto' %}">Crypto</a></li>
+                            <li><a class="dropdown-item" href="{% url 'coinsync:conversions' type='Currency' %}">Currencies</a></li>
+                          </ul>
+                        </li>
+                        {% if is_user_authenticated %}
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:dashboard' %}">My Portfolio</a></li>
+                        {% else %}
+                            <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:landing' %}">My Portfolio</a></li>
+                        {% endif %}
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:contact' %}">Contact Us </a></li>
+                    </ul>
+                </div>
+                {% if is_user_authenticated %}
+                <a class="link-dark link-offset-3 link-underline-opacity-25 link-underline-opacity-100-hover fw-bolder" href="{% url 'coinsync:crypto_request' %}">Get listed </a>
+                {% endif %}
+                <div class="position-relative shadow-sm bg-white rounded mx-3">
+                    <span class="position-absolute search"><i class="fa fa-search"></i></span>
+                    <input id="myInput" class="form-control " placeholder="Search">
+                </div>
+                {% if not is_user_authenticated %}
+                <a href="{% url 'coinsync:login' %}"> <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Login/Signup</button></a>
+                {% else %}
+                    <a href="{% url 'coinsync:logout' %}"> <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Logout</button></a>
+                {% endif %}
+
+            </div>
+        </nav>
+    </header>
+
+<div class="hero-container" id="hero-sec">
+  <div class="container-fluid ">
+  <div class="row d-flex">
+
+    <div class="col ml-4">
+      <div class="px-5 py-5 mt-5">
+        <div class="px-5 py-2 align-middle">
+            <h1 class="fw-bolder my-4"><span class="text-primary">Trade Smarter:</span><br/> Forex and Crypto Hub</h1>
+        <h5> Discover the future of finance with real-time Forex rates and crypto trading. Unleash your potential in global markets with our intuitive platform.</h5>
+        </div>
+        <div class="px-5 py-2">
+            <a href="{% url 'coinsync:login' %}"><button type="button" class="btn-lg btn-dark get-started">Get started</button></a>
+            <h6 class="fw-bolder my-4">Start trading now!</h6>
+        </div>
+
+      </div>
+    </div>
+      <div class="col align-middle">
+      <div class="px-2 py-2 mt-5">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/cryptocurrency-marketplace-for-exchange-of-bitcoin-and-digital-currencies-3327880-2793785.png" class="img-fluid" width="550" height="400" alt="...">
+      </div>
+    </div>
+</div>
+</div>
+<!-- main container -->
+<div class="main-container">
+  <div class="container-fluid">
+  ...
+</div>
+</div>
+
+<div class="container mt-5 px-2 bg-white  rounded-lg">
+
+        <p class="h2 fw-bolder my-2 p-5 text-center">Why Choose Us?</p>
+        <div class="row p-5">
+            <div class="col-xl-4 col-sm-6 mb-5">
+                <div class="py-3 px-1">
+                    <div class="list-group">
+                        <div class ="mb-4">
+                            <div class="d-flex w-100 justify-content-between">
+                              <i class="fa fa-duotone fa-circle-check fa-xl mb-4"></i>
+                            </div>
+                        <p class="h5 mb-0 fw-bolder">Live Price Updates</p>
+                        <small>Stay current with instant crypto updates.</small>
+                        </div>
+                        <div class ="my-4">
+                            <div class="d-flex w-100 justify-content-between">
+                              <i class="fa fa-duotone fa-circle-check fa-xl mb-4"></i>
+                            </div>
+                            <p class="h5 mb-0 fw-bolder">Market Capitalization</p>
+                            <small class="text-body-secondary">Monitor crypto significance at a glance.</small>
+                        </div>
+                        <div class ="my-4">
+                            <div class="d-flex w-100 justify-content-between">
+                              <i class="fa fa-duotone fa-circle-check fa-xl mb-4"></i>
+                            </div>
+                            <p class=" h5 mb-0 fw-bolder">Comprehensive List</p>
+                            <small class="text-body-secondary">Explore a diverse range of digital assets.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-5">
+                <div class="py-3 px-1"><img src="https://img.freepik.com/free-vector/hand-drawn-creative-cardano-illustration_23-2149196755.jpg" alt="" class="img-fluid ">
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-6 mb-5">
+                <div class="py-3 px-3">
+                    <div class="list-group">
+                        <div class ="mb-4">
+                            <div class="d-flex w-100 justify-content-between">
+                              <i class=" fa fa-duotone fa-circle-check fa-xl mb-4"></i>
+                            </div>
+                        <p class="h5 mb-0 fw-bolder">Updated Forex rates</p>
+                        <small>Stay current with latest forex rate.</small>
+                        </div>
+                        <div class ="my-4">
+                            <div class="d-flex w-100 justify-content-between">
+                              <i class="fa fa-duotone fa-circle-check fa-xl mb-4"></i>
+                            </div>
+                            <p class="h5 mb-0 fw-bolder">Historical Analysis</p>
+                            <small class="text-body-secondary">Understand crypto performance over time.</small>
+                        </div>
+                        <div class ="my-4">
+                            <div class="d-flex w-100 justify-content-between">
+                              <i class="fa fa-duotone fa-circle-check fa-xl mb-4"></i>
+                            </div>
+                            <p class=" h5 mb-0 fw-bolder">User-Friendly Interface</p>
+                            <small class="text-body-secondary">Easy navigation for quick insights.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+    <div class="container-fluid ">
+  <div class="row d-flex">
+    <div class="col align-middle">
+      <div class="px-5 py-2 mt-5">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/forex-trading-4268346-3560989.png?f=webp" class="img-fluid" width="550" height="400" alt="...">
+      </div>
+    </div>
+    <div class="col ml-4">
+      <div class="px-5 py-5 mt-5">
+        <div class="px-5 py-4 align-middle">
+            <h1 class="fw-bolder my-4">Your trusted <span class="text-warning">crytocurrency</span> partner</h1>
+        <h5>Dive into real-time Forex rates and crypto trading with our user-friendly platform. Get instant updates, access comprehensive insights, and stay ahead of market trends. Join us and trade smarter today!</h5>
+        </div>
+
+      </div>
+    </div>
+</div>
+</div>
+
+
+<footer class="w-100 py-4 flex-shrink-0 mt-5">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="h1 text-white text-uppercase">€oin$ync</h5>
+                    <p class="small text-muted">Stay updated on crypto markets with real-time prices and market caps. Your go-to tool for instant insights into the dynamic world of digital assets. Perfect for investors, traders, and anyone curious about cryptocurrency trends.</p>
+                    <p class="small text-muted">&copy; Copyrights. All rights reserved. €oin$ync</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="{% url 'coinsync:index' %}">Trending</a></li>
+                        <li><a href="{% url 'coinsync:conversions' type="Crypto" %}">Crypto Convertor</a></li>
+                        <li><a href="{% url 'coinsync:conversions' type="Currency" %}">Currency Convertor</a></li>
+                        <li><a href="{% url 'coinsync:contact' %}">Contact Us</a></li>
+                        <li><a href="{% url 'coinsync:crypto_request' %}">Get listed</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <form method="post" action="{% url 'coinsync:landing' %}">
+                        {% csrf_token %}
+                        <div class="input-group mb-3">
+                            {{ form.email }}
+                            <button class="btn btn-warning" id="button-addon2" type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                    <p class="text-white">Liked our services? <a href="{% url 'coinsync:feedback' %}" class="text-warning">Give feedback here.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+{% endblock %}

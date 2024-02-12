@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load static %}
+{% block title %}Converter{% endblock %}
+{% block body_block %}
+
+<header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+            <div class="container"><a class="navbar-brand" href="{% url 'coinsync:landing' %}">
+                <strong class="h5 mb-0 fw-bolder text-uppercase text-monospace">€oin$ync</strong></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item  fw-bolder"><a class="nav-link " href="{% url 'coinsync:index' %}">Cryptocurrency </a></li>
+                        <li class="nav-item dropdown fw-bolder">
+                          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Conversions
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'coinsync:conversions' type='Crypto' %}">Crypto</a></li>
+                            <li><a class="dropdown-item" href="{% url 'coinsync:conversions' type='Currency' %}">Currencies</a></li>
+                          </ul>
+                        </li>
+                        {% if is_user_authenticated %}
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:dashboard' %}">My Portfolio</a></li>
+                        {% else %}
+                            <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:landing' %}">My Portfolio</a></li>
+                        {% endif %}
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:contact' %}">Contact Us </a></li>
+                    </ul>
+                </div>
+                {% if is_user_authenticated %}
+                <a class="link-dark link-offset-3 link-underline-opacity-25 link-underline-opacity-100-hover fw-bolder" href="{% url 'coinsync:crypto_request' %}">Get listed </a>
+                {% endif %}
+                <div class="position-relative shadow-sm bg-white rounded mx-3">
+                    <span class="position-absolute search"><i class="fa fa-search"></i></span>
+                    <input id="myInput" class="form-control " placeholder="Search">
+                </div>
+                {% if not is_user_authenticated %}
+                <a href="{% url 'coinsync:login' %}"> <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Login/Signup</button></a>
+                {% else %}
+                    <a href="{% url 'coinsync:logout' %}"> <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Logout</button></a>
+                {% endif %}
+
+            </div>
+        </nav>
+    </header>
+<div class="container mt-5 currency bg-white border border-light rounded shadow-sm" style="max-width: 40%; background:white">
+  <h2 class="p-3 m-3 text-center">{{ type }} Converter</h2>
+  <form id="currencyConverterForm" class = "p-2 m-2" method="post">
+    {% csrf_token %}
+    <div class="form-column">
+      <div class="form-group col-md-12 ">
+        <div class="input-group mb-3 m-1 p-1">
+          <label class="fw-bolder mt-1" for="id_amount">Amount</label>
+            {{ form.amount }}
+        </div>
+      <div class="form-group col-md-12  mb-2 m-1 p-1">
+        <label class="fw-bolder " for="id_from_currency">From {{ type }}:</label>
+        {{ form.from_currency }}
+      </div>
+          {% if type == "Currency" %}
+          <div class="form-row">
+      <div class="form-group col-md-12 m-1 text-center">
+        <button type="button" class="btn btn-secondary" onclick="swapCurrencies()"><i class="fa-solid fa-rotate"></i></button>
+      </div>
+    </div>
+          {% endif %}
+      <div class="form-group col-md-12 m-1 p-1">
+        <label class="fw-bolder " for="id_to_currency">To Currency:</label>
+        {{ form.to_currency }}
+      </div>
+      {% if result %}
+      <div class="form-group col-md-12 m-1 p-1">
+        <label class="fw-bolder mx-2" for="result">Result:</label>
+        <input type="text" class="form-control" id="result"  value="{{ result|floatformat:2|intcomma }}" disabled>
+      </div>
+      {% endif %}
+      <div class="form-group col-md-12 text-center p-2 m-2" >
+        <button id="convert" type="submit" class="btn btn-primary">Convert</button>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
+{% block script_block %}
+    document.getElementById('id_from_currency').classList.add('form-select')
+    document.getElementById('id_to_currency').classList.add('form-select')
+    document.getElementById('id_amount').classList.add('form-control')
+    document.getElementById('id_amount').classList.add('border')
+    document.getElementById('id_amount').classList.add('mx-2')
+    function swapCurrencies() {
+    // Swap the selected currencies
+    const fromCurrency = document.getElementById('id_from_currency').value;
+    const toCurrency = document.getElementById('id_to_currency').value;
+    console.log(fromCurrency, toCurrency)
+    document.getElementById('id_from_currency').value = toCurrency;
+    document.getElementById('id_to_currency').value = fromCurrency;
+    document.getElementById('convert').click()
+
+  }
+{% endblock %}

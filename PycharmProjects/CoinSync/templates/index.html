@@ -1,0 +1,292 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load static %}
+{% block title %}Coins{% endblock %}
+{% block body_block %}
+    <div class="sticky-top">
+
+        {% if global_data and global_data|length %}
+            <div class="p-2">
+                <small class=" m-2">
+                    Total coins: <span class="fw-bolder">{{ global_data.coins_count }} </span> &nbsp; &nbsp;
+                    Active Markets: <span class="fw-bolder">{{ global_data.active_markets }}</span> &nbsp; &nbsp;
+                    Total Market Cap: <span class="fw-bolder">${{ global_data.total_mcap }}</span> &nbsp; &nbsp;
+                    Dominance: Bitcoin: <span class="fw-bolder">{{ global_data.btc_d }}</span> &nbsp; &nbsp;
+                    Ethereum: <span class="fw-bolder">{{ global_data.eth_d }}</span>
+                </small>
+            </div>
+
+        {% endif %}
+    </div>
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+            <div class="container"><a class="navbar-brand" href="{% url 'coinsync:landing' %}">
+                <strong class="h5 mb-0 fw-bolder text-uppercase text-monospace">€oin$ync</strong></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active fw-bolder"><a class="nav-link active" href="#">Cryptocurrency </a></li>
+                        <li class="nav-item dropdown fw-bolder">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Conversions
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'coinsync:conversions' type='Crypto' %}">Crypto</a></li>
+                            <li><a class="dropdown-item" href="{% url 'coinsync:conversions' type='Currency' %}">Currencies</a></li>
+                          </ul>
+                        </li>
+                        {% if is_user_authenticated %}
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:dashboard' %}">My Portfolio</a></li>
+                        {% else %}
+                            <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:landing' %}">My Portfolio</a></li>
+                        {% endif %}
+                        <li class="nav-item fw-bolder"><a class="nav-link " href="{% url 'coinsync:contact' %}">Contact Us </a></li>
+                    </ul>
+                </div>
+                {% if is_user_authenticated %}
+                <a class="link-dark link-offset-3 link-underline-opacity-25 link-underline-opacity-100-hover fw-bolder" href="{% url 'coinsync:crypto_request' %}">Get listed </a>
+                {% endif %}
+                <div class="position-relative shadow-sm bg-white rounded mx-3">
+                    <span class="position-absolute search"><i class="fa fa-search"></i></span>
+                    <input id="myInput" class="form-control " placeholder="Search">
+                </div>
+                {% if not is_user_authenticated %}
+                <a href="{% url 'coinsync:login' %}"> <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Login/Signup</button></a>
+                {% else %}
+                    <a href="{% url 'coinsync:logout' %}"> <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Logout</button></a>
+                {% endif %}
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+      <div class="form-check form-switch ">
+        <input class="form-check-input" type="checkbox" id="toggleSwitch">
+        <label class="form-check-label" for="toggleSwitch">Highlights</label>
+      </div>
+    </div>
+
+    <div class="container mt-3" id="highlights" style="display: none;">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <div class="col">
+      <div class="card bg-white border border-light shadow-sm highlights">
+        <div class="card-header text-center bg-dark text-light">
+          Trending Coins
+        </div>
+        <div class="card-body pt-2">
+          <table class="table table-borderless table-hover my-1">
+            <tbody>
+            {% for i in trendingCoins|slice:3 %}
+              <tr>
+                <td class="fw-bolder"><img src="{{i.item.large}}" width="20" class = "mx-1"> {{i.item.name}}</td>
+                <td class="fw-bolder">#{{ i.item.market_cap_rank}}</td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card bg-white border border-light shadow-sm highlights">
+        <div class="card-header text-center bg-dark text-light">
+          Trending NFTS
+        </div>
+        <div class="card-body pt-2">
+          <table class="table my-1 table-borderless table-hover">
+
+            <tbody >
+            {% for i in trendingNfts|slice:3 %}
+              <tr>
+                <td class="fw-bolder"><img src="{{i.thumb}}" width="20" class = "mx-1"> {{i.name}}</td>
+                <td class="text-success fw-bolder">+{{ i.floor_price_24h_percentage_change | floatformat:2}}%</td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+    <div class="container mt-5 px-2">
+    <p class="h3 fw-bolder my-4">Categories</p>
+        <div class="row text-center">
+        {% for i in trendingCategories %}
+            <div class="col-xl-2 col-sm-6 mb-2">
+                <div class="bg-white border border-light py-2 px-0 shadow-sm trending trending-cat ">
+                    <img src="{{ i.image }}" alt="" width="45" class="img-fluid rounded-circle mb-1 mx-2 img-thumbnail">
+                    <h6 class="px-1 fw-bolder">{{ i.name }}</h6>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="container mt-5">
+    <div class="accordion accordion-flush rounded" id="filterAccordion">
+
+        <div class="card accordion-item rounded">
+            <div class="accordion-header align-right p-0" id="filterHeading">
+                <h2 class="mb-0 rounded">
+                    <button class="btn accordion-button p-2 px-3" type="button" data-toggle="collapse" data-target="#filterCollapse"
+                            aria-expanded="false" aria-controls="filterCollapse">
+                        Filter
+                    </button>
+                </h2>
+            </div>
+
+            <div id="filterCollapse" class="accordion-collapse collapse" aria-labelledby="filterHeading" data-parent="#filterAccordion">
+                <div class="accordian-body card-body">
+                    <form class="row g-3" action="{% url 'coinsync:index' %}" method="get">
+                        {% csrf_token %}
+                        <div class="form-group col-md-4">
+                            <label class="mr-2" for="id_sortSelect">Sort Order:</label>
+                            {{ form.sortOrder }}
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label class="mr-2" for="id_currency">Select Currency:</label>
+                            {{ form.currency }}
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label class="mr-2" for="id_category">Select Category:</label>
+                            {{ form.category }}
+                        </div>
+                        <div class="col-12 mt-3 ">
+                            <button type="submit" class="btn btn-dark">Apply Filters</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        <p class="h3 fw-bolder mt-5 mb-0">Cryptocurrency Prices by Market Cap</p>
+        {% if global_data.mcap_change|floatformat:0 > 0%}
+            <small class="mb-4">Global market cap went down by <span class="ms-1 fw-bolder" style="color: red;">{{ global_data.mcap_change }}% today.</span></small>
+         {% else %}
+            <small class="mb-4">Global market cap went up by <span class="ms-1 fw-bolder" style="color: green;">{{ global_data.mcap_change }}% today.</span></small>
+        {% endif %}
+        <div class="table-responsive mt-4">
+        <table class="table table-responsive bg-white shadow-sm p-3 mb-5 bg-white rounded">
+
+          <thead>
+            <tr class="bg-dark text-left text-light">
+              <th scope="col" width="5%" class="px-3">#</th>
+              <th scope="col" width="20%">Name</th>
+              <th scope="col" width="10%">Symbol</th>
+              <th scope="col" width="15%">Price</th>
+              <th scope="col" width="10%">24h</th>
+              <th scope="col" width="15%">Volume</th>
+              <th scope="col" width="16%">Market Cap</th>
+              <th scope="col" width="5%"></th>
+            </tr>
+          </thead>
+          <tbody id = "myTable">
+          {% for i in coins %}
+            <tr class="fw-bolder text-left align-middle">
+              <td class="p-3">{{ i.market_cap_rank }}</td>
+                <td><img src="{{i.image}}" width="45" class = "mx-1">{{i.name}}</td>
+                <td><span>{{ i.symbol | upper }}</span></td>
+              <td>${{i.current_price | intcomma}}</td>
+              <td>
+                  {% if i.price_change_percentage_24h < 0 %}
+                <span class="ms-1 fw-bolder" style="color: red;">{{ i.price_change_percentage_24h|floatformat:2 }}%</span>
+                {% elif i.price_change_percentage_24h > 0 %}
+                    <span class="ms-1 fw-bolder" style="color: green;">+{{ i.price_change_percentage_24h|floatformat:2 }}%</span>
+                {% else %}
+                    <span class="ms-1 fw-bolder">{{ i.price_change_percentage_24h|floatformat:2 }}%</span>
+                {% endif %}
+              </td>
+              <td><span class="fw-bolder">${{i.total_volume| intword}}</span></td>
+              <td><span class="fw-bolder">${{i.market_cap| intword}}</span></td>
+              {% if i.sparkline_in_7d and i.sparkline_in_7d.price %}
+                <td> <a href="{% url 'coinsync:charts' crypto=i.name price=i.sparkline_in_7d.price|join:'-'|urlencode %}">trends..</a></td>
+              {% endif %}
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+        </div>
+
+        <p class="h3 fw-bolder my-4">Today's Trending Coins</p>
+        <div class="row text-center">
+        {% for i in trendingCoins %}
+            <div class="col-xl-2 col-sm-6 mb-5">
+                <div class="bg-white trending trending-coins border border-light py-3 px-0 shadow-sm">
+                    <img src="{{ i.item.large }}" alt="" width="50" class="img-fluid rounded-circle mb-3 img-thumbnail">
+                    <h5 class="mb-0 fw-bolder">{{ i.item.name }}</h5><span class="small text-uppercase ">{{ i.item.symbol | upper}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <p class="h3 fw-bolder my-4">Today's Trending NFTs</p>
+        <div class="row text-center">
+        {% for i in trendingNfts %}
+            <div class="col-xl-2 col-sm-6 mb-5">
+                <div class="bg-white trending trending-nfts border border-light py-3 px-0 shadow-sm">
+                    <img src="{{ i.thumb }}" alt="" width="50" class="img-fluid rounded-circle mb-3 img-thumbnail">
+                    <h5 class="mb-0 fw-bolder">{{ i.name |title }}</h5><span class="small fw-bolder text-success">+{{ i.floor_price_24h_percentage_change | floatformat:2}}%</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer class="w-100 py-4 flex-shrink-0 mt-5">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="h1 text-white text-uppercase">€oin$ync</h5>
+                    <p class="small text-muted">Stay updated on crypto markets with real-time prices and market caps. Your go-to tool for instant insights into the dynamic world of digital assets. Perfect for investors, traders, and anyone curious about cryptocurrency trends.</p>
+                    <p class="small text-muted">&copy; Copyrights. All rights reserved. €oin$ync</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="{% url 'coinsync:index' %}">Trending</a></li>
+                        <li><a href="{% url 'coinsync:conversions' type="Crypto" %}">Crypto Convertor</a></li>
+                        <li><a href="{% url 'coinsync:conversions' type="Currency" %}">Currency Convertor</a></li>
+                        <li><a href="{% url 'coinsync:contact' %}">Contact Us</a></li>
+                        <li><a href="{% url 'coinsync:crypto_request' %}">Get listed</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-warning" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                    <p class="text-white">Liked our services? <a href="{% url 'coinsync:feedback' %}" class="text-warning">Give feedback here.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+{% block script_block %}
+    $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+     $(document).ready(function() {
+    $('#toggleSwitch').change(function() {
+      $('#highlights').toggle($(this).prop('checked'));
+    });
+  });
+{% endblock %}
